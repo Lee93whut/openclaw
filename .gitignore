@@ -1,0 +1,12 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Temp files
+*.tmp
+*.bak
+.DS_Store
+
+# Sync script output
+sync.log
