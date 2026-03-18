@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-18 11:11:49
+> 最后更新: 2026-03-18 11:15:30
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -18,3 +18,4 @@
 - [[agents/writer/experience|writer]]
 
 ## 项目产出
+- [[projects/test-project|test-project]]
