@@ -319,41 +319,16 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - 调研员无法完成 → 调研员找项目管理说明理由
 - 项目管理决定重新分配或向用户汇报
 
-### 如何调用其他Agent (使用 sessions_spawn)
+### 可用的 Agent ID（通过 @ 提及调用）
 
-当需要将任务传递给其他agent时，使用 `sessions_spawn` 工具：
+在飞书群中，直接使用 @ 提及来调用其他 agent：
 
-```json
-{
-  "task": "【任务分发】-【项目名称】-【任务类型】\n## 任务描述\n{具体需求描述}\n\n## 上下文\n- 项目阶段: {需求/架构/开发/测试}\n- 优先级: {P0/P1/P2}\n\n## 交付要求\n1. {具体要求1}\n2. {具体要求2}",
-  "agentId": "lili-pm",
-  "label": "任务分发-PM"
-}
-```
+- @项目管理 → PM (lili-pm)
+- @产品经理 → 产品经理 (lili-product)
+- @调研员 → 调研员 (lili-researcher)
+- @架构师 → 架构师 (lili-architect)
+- @开发工程师 → 开发工程师 (lili-developer)
+- @测试工程师 → 测试工程师 (lili-qa)
+- @文档专家 → 文档专家 (lili-writer)
 
-**可用的Agent ID：**
-- `lili-pm` - 项目管理
-- `lili-product` - 产品经理
-- `lili-researcher` - 调研员
-- `lili-architect` - 系统架构
-- `lili-developer` - 开发工程师
-- `lili-qa` - 测试工程师
-- `lili-writer` - 文档专家
-
-**任务传递格式：**
-```
-【任务分发】-【项目名称】-【任务类型】
-
-## 任务描述
-{具体需求描述}
-
-## 上下文
-- 项目阶段: {阶段}
-- 优先级: {优先级}
-
-## 交付要求
-1. {要求1}
-2. {要求2}
-
-@角色名 确认接收
-```
+**重要：所有任务都需要先经过 PM 进行任务分解！**
