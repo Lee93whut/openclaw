@@ -370,6 +370,13 @@ EOF
 
 **步骤：**
 1. 检查项目是否已存在：`ls ~/.openclaw/workspaces/lili/projects/`
+2. 如果项目存在，读取 TASKS.md 查看当前状态
+3. 如果"需要触发: 否"，**必须执行以下命令继续工作流**：
+```bash
+# 设置需要触发为是，让调度器继续
+sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+```
+4. 告知用户项目已存在，工作流将继续
 2. 如果项目存在，读取 TASKS.md 查看当前状态：
    ```bash
    cat ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
