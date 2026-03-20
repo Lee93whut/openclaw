@@ -366,32 +366,86 @@ EOF
 
 ### 【重要】处理重复任务/已存在项目
 
-当用户发送的任务与现有项目重复时，**不要创建新项目**，而是复用现有项目继续推进工作流：
+当用户发送的任务与现有项目重复时，需要检测相似度并智能处理：
 
-**步骤：**
-1. 检查项目是否已存在：`ls ~/.openclaw/workspaces/lili/projects/`
-2. 如果项目存在，读取 TASKS.md 查看当前状态
-3. 如果"需要触发: 否"，**必须执行以下命令继续工作流**：
+#### 步骤1：检测项目存在性
+
+**首先检查项目名是否完全匹配**：
+```bash
+PROJECT_DIR="$HOME/.openclaw/workspaces/lili/projects"
+# 列出所有现有项目
+ls "$PROJECT_DIR"/
+```
+
+#### 步骤2：相似度检测（关键改进）
+
+如果项目名不完全匹配，**必须执行相似度检测**：
+
+**2.1 项目名模糊匹配**：
+```bash
+# 用户任务: "调研A2A协议"
+# 项目名: "A2A协议调研测试"
+# 使用关键词匹配检测
+
+user_task="调研A2A协议"
+for dir in "$PROJECT_DIR"/*/; do
+  project_name=$(basename "$dir")
+  # 检查关键词是否互相包含
+  if [[ "$user_task" == *"$project_name"* ]] || [[ "$project_name" == *"$user_task"* ]]; then
+    echo "FOUND_SIMILAR:$project_name"
+  fi
+done
+```
+
+**2.2 任务内容匹配**：
+```bash
+# 在现有项目的 TASKS.md 中搜索任务内容
+for task_file in "$PROJECT_DIR"/*/shared/TASKS.md; do
+  if grep -q -i "A2A" "$task_file"; then
+    similar_project=$(basename $(dirname "$task_file"))
+    echo "FOUND_SIMILAR:$similar_project"
+  fi
+done
+```
+
+#### 步骤3：处理决策
+
+根据检测结果决定处理方式：
+
+| 检测结果 | 处理方式 |
+|----------|----------|
+| 完全匹配 | 直接继续现有工作流 |
+| 相似匹配 | 提示用户选择 |
+| 无匹配 | 创建新项目 |
+
+#### 步骤4：用户提示模板
+
+当检测到相似任务时，**必须提示用户选择**：
+```
+⚠️ 检测到相似任务
+
+现有项目: {项目名}
+当前阶段: {当前阶段}
+任务内容: {任务内容}
+
+请选择：
+1. 继续现有任务 → 工作流将继续
+2. 创建新项目 → 创建独立的新任务
+3. 查看详情 → 展示现有任务状态
+```
+
+#### 步骤5：继续工作流
+
+当用户选择"继续现有任务"时：
 ```bash
 # 设置需要触发为是，让调度器继续
-sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
-```
-4. 告知用户项目已存在，工作流将继续
-2. 如果项目存在，读取 TASKS.md 查看当前状态：
-   ```bash
-   cat ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
-   ```
-3. 根据当前状态决定：
-   - **如果当前阶段不是"已完成"**：设置"需要触发: 是"让调度器继续
-   - **如果当前阶段是"已完成"**：可以创建新项目或询问用户
-
-**示例命令**（当发现项目存在但工作流中断时）：
-```bash
-# 检查并继续工作流
-sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+sed -i 's/需要触发: 否/需要触发: 是/' "$PROJECT_DIR/{项目名}/shared/TASKS.md"
 ```
 
-**这样可以确保**：重复需求不会创建新项目，而是继续推进现有工作流。
+**这样可以确保**：
+- 重复需求不会创建重复项目
+- 用户可以选择继续现有任务或创建新任务
+- 工作流可以无缝继续
 
 ### Entry 发送消息的格式
 
