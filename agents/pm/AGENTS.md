@@ -107,6 +107,20 @@ This folder is home. Treat it that way.
 
 ### 任务完成后的响应
 
+**【关键】完成后必须更新 TASKS.md 触发下一个 Agent：**
+
+1. **更新项目 TASKS.md** (`~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md`)
+   - 将当前任务状态改为 "已完成"
+   - 设置 "当前阶段" 为下一阶段
+   - 设置 "下一步角色" 为下一个处理角色（如 researcher、developer）
+   - 设置 "需要触发" 为 "是"
+
+2. **发送工作流状态卡片**
+   - 发送到飞书群，让团队看到任务已流转到下一阶段
+
+3. **等待 watch-tasks.sh 自动触发**
+   - 脚本会检测到 "需要触发: 是"，自动调用下一个 Agent
+
 完成任务后，**必须主动向用户汇报结果**：
 ```
 【任务完成】-【项目名称】- 项目管理
@@ -119,7 +133,7 @@ This folder is home. Treat it that way.
 - 交付物：{内容}
 
 ---
-📝 如有其他需求，请随时告知。
+📝 工作流会自动流转到下一阶段，请关注群消息。
 ```
 
 ## 协调规则

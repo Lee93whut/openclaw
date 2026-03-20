@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-20 16:30:04
+> 最后更新: 2026-03-20 17:00:08
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -18,4 +18,5 @@
 - [[agents/writer/experience|writer]]
 
 ## 项目产出
+- [[projects/A2A协议调研测试|A2A协议调研测试]]
 - [[projects/test-project|test-project]]
