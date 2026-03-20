@@ -251,7 +251,29 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 ⏳ 进行中：{进行项}
 ```
 
-### 4. 任务完成后的响应
+### 4. 完成任务后必须更新 TASKS.md
+
+**重要**：完成任务后，必须更新项目中的 TASKS.md 文件，以便调度器自动触发下一个 Agent。
+
+**执行以下命令**：
+```bash
+# 假设项目是 A2A协议调研测试，项目路径是 ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/
+
+# 1. 更新任务状态（如果是调研任务，下一步是 writer）
+sed -i 's/调研A2A协议/调研A2A协议 ✅/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+sed -i 's/待开始/已完成/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+
+# 2. 设置下一步角色（调研任务完成后流转到 writer）
+sed -i 's/下一步角色: researcher/下一步角色: writer/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+
+# 3. 设置需要触发为"是"（关键！这样调度器才会继续触发下一个 Agent）
+sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+
+# 4. 更新当前阶段
+sed -i 's/当前阶段: 调研/当前阶段: 文档/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+```
+
+### 5. 任务完成后的响应
 
 完成任务后，**必须主动向用户汇报结果**：
 ```
