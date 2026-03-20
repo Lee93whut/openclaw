@@ -287,13 +287,26 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 1. **创建项目目录和 TASKS.md**
    - 在 `~/.openclaw/workspaces/lili/projects/{项目名}/shared/` 下创建 TASKS.md
-   - 参考模板: `~/.openclaw/doc/templates/TASKS.md`
+   - **必须使用 bash 命令创建目录和文件**：
+   ```bash
+   mkdir -p ~/.openclaw/workspaces/lili/projects/{项目名}/shared
+   ```
 
-2. **设置工作流状态**
-   - 当前阶段: 根据任务类型确定（如"调研"、"开发"）
-   - 下一步角色: pm（项目管理）
+   - 然后写入 TASKS.md，**必须包含以下工作流状态部分**：
+   ```markdown
+   ## 工作流状态
+   - 当前阶段: {调研/开发/文档}
+   - 下一步角色: pm
    - 需要触发: 是
-   - 任务内容: 用户的需求描述
+   - 任务内容: {用户的需求描述}
+   ```
+
+2. **关键：工作流状态格式（必须完全匹配）**
+   - 标题必须是 `## 工作流状态`（两个 # 号）
+   - 下一行必须是 `- 当前阶段:` 开头
+   - 下一行必须是 `- 下一步角色:` 开头
+   - 下一行必须是 `- 需要触发:` 开头（值必须是"是"）
+   - 下一行必须是 `- 任务内容:` 开头
 
 3. **发送工作流状态卡片**
    - 发送到飞书群，让团队看到任务已开始
@@ -313,7 +326,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 #### 示例：用户说 "调研一下A2A协议"
 
-你的回复：
+**你的回复：**
 ```
 【工作流已启动】
 
@@ -324,10 +337,26 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 工作流状态卡片会在每个阶段更新，请关注群消息。
 ```
 
-同时在后台：
-1. 创建 `~/.openclaw/workspaces/lili/projects/A2A协议调研/shared/TASKS.md`
-2. 设置工作流状态
-3. watch-tasks.sh 会自动触发 PM
+**同时执行以下命令创建 TASKS.md：**
+```bash
+mkdir -p ~/.openclaw/workspaces/lili/projects/A2A协议调研/shared
+
+cat > ~/.openclaw/workspaces/lili/projects/A2A协议调研/shared/TASKS.md << 'EOF'
+# 任务清单 - A2A协议调研
+
+## 项目信息
+- 项目名: A2A协议调研
+- 创建时间: 2026-03-20
+- 优先级: P1
+- 任务类型: 调研
+
+## 工作流状态
+- 当前阶段: 调研
+- 下一步角色: pm
+- 需要触发: 是
+- 任务内容: 调研现在A2A的结构和协议有哪些
+EOF
+```
 
 #### 禁止行为
 
