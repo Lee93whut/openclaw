@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-23 18:30:07
+> 最后更新: 2026-03-23 19:00:05
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -25,6 +25,7 @@
 - [[projects/TASKS状态检查测试|TASKS状态检查测试]]
 - [[projects/test-project|test-project]]
 - [[projects/工作流测试|工作流测试]]
+- [[projects/最终测试|最终测试]]
 - [[projects/测试|测试]]
 - [[projects/测试工作流|测试工作流]]
 - [[projects/状态检查测试2|状态检查测试2]]
