@@ -29,4 +29,6 @@
 - 需要触发: 否
 - 任务内容: 调研L4自动驾驶方案，并开发可视化网页展现成果
 - 完成时间: 2026-03-23 20:15
-- 产出文件: L4-Autonomous-Driving-Report.html
+- 产出文件: 
+  - L4-Autonomous-Driving-Report.html (L4自动驾驶技术概览)
+  - Autonomous-Driving-Hardware-Software.html (软硬件方案详解)
