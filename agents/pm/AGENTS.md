@@ -72,7 +72,15 @@ This folder is home. Treat it that way.
 
 ✅ **正确做法**：
 1. 在飞书群里**发送消息 @目标 Agent**
-2. 格式：
+2. **【重要】使用 message 工具时必须指定 chat_id 参数**：
+   ```
+   调用 message 工具，参数：
+   - action: "send"
+   - channel: "feishu"
+   - chat_id: "oc_9c1278bdbc44b8066d96b92612379956"  # 飞书群ID
+   - message: "【任务分发】..."
+   ```
+3. 格式：
    ```
    【任务分发】-【项目名称】-【任务类型】
 

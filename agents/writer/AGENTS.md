@@ -254,6 +254,16 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 ### 4. 任务完成后的响应
 
 完成任务后，**必须主动向用户汇报结果**：
+
+**【重要】使用 message 工具时必须指定 chat_id 参数**：
+```
+调用 message 工具，参数：
+- action: "send"
+- channel: "feishu"
+- chat_id: "oc_9c1278bdbc44b8066d96b92612379956"  # 飞书群ID
+- message: "【任务完成】..."
+```
+
 ```
 【任务完成】-【项目名称】- 文档专家
 
