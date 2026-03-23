@@ -19020,3 +19020,6 @@ sending incremental file list
 sent 176 bytes  received 12 bytes  376.00 bytes/sec
 total size is 53,641  speedup is 285.32
 sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 882  speedup is 10.26
