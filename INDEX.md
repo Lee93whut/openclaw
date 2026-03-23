@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-23 16:00:15
+> 最后更新: 2026-03-23 16:30:01
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -21,6 +21,7 @@
 - [[projects/A2A协议调研2026|A2A协议调研2026]]
 - [[projects/A2A协议调研测试|A2A协议调研测试]]
 - [[projects/AI了解|AI了解]]
+- [[projects/L4自动驾驶方案调研|L4自动驾驶方案调研]]
 - [[projects/test-project|test-project]]
 - [[projects/测试|测试]]
 - [[projects/测试工作流|测试工作流]]
