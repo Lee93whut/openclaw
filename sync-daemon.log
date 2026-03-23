@@ -31330,3 +31330,7 @@ sending incremental file list
 
 sent 74 bytes  received 12 bytes  172.00 bytes/sec
 total size is 882  speedup is 10.26
+To github.com:Lee93whut/openclaw.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 21d7bc3958a725309eaa7af1a70ec55259a782a9 but expected 2cd2104cee40d86c3e3f823a305b385942c9020f)
+error: failed to push some refs to 'github.com:Lee93whut/openclaw.git'
+[2026-03-24 00:30:07] ✗ 推送失败
