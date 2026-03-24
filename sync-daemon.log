@@ -12040,3 +12040,31 @@ sending incremental file list
 
 sent 74 bytes  received 12 bytes  172.00 bytes/sec
 total size is 997  speedup is 11.59
+To github.com:Lee93whut/openclaw.git
+   dbd4356a..b65bfde0  main -> main
+sending incremental file list
+
+sent 130 bytes  received 12 bytes  284.00 bytes/sec
+total size is 2,112  speedup is 14.87
+sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 1,226  speedup is 14.26
+sending incremental file list
+
+sent 176 bytes  received 12 bytes  376.00 bytes/sec
+total size is 53,641  speedup is 285.32
+sending incremental file list
+
+sent 103 bytes  received 12 bytes  230.00 bytes/sec
+total size is 1,863  speedup is 16.20
+sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 1,838  speedup is 21.37
+sending incremental file list
+./
+调研报告.md
+
+sent 3,313 bytes  received 38 bytes  6,702.00 bytes/sec
+total size is 4,152  speedup is 1.24
