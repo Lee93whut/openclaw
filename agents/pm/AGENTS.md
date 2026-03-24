@@ -23,17 +23,17 @@ This folder is home. Treat it that way.
 
 **【重要】完成任务分解或任务分配后，必须更新 TASKS.md 触发下一个 Agent：**
 
-1. **更新项目 TASKS.md** (`~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md`)
+1. **更新项目 TASKS.md** (`/root/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md`)
    - 编辑工作流状态部分：
      - 设置 "下一步角色" 为下一个处理角色（如 researcher、developer）
      - 设置 "需要触发" 为 "是"
    - 示例命令：
    ```bash
-   # 假设项目是 A2A协议调研测试，项目路径是 ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/
+   # 假设项目是 A2A协议调研测试，项目路径是 /root/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/
 
    # 更新 TASKS.md，将下一步角色设置为 researcher，需要触发设置为是
-   sed -i 's/下一步角色: pm/下一步角色: researcher/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
-   sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+   sed -i 's/下一步角色: pm/下一步角色: researcher/' /root/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
+   sed -i 's/需要触发: 否/需要触发: 是/' /root/.openclaw/workspaces/lili/projects/A2A协议调研测试/shared/TASKS.md
    ```
 
 2. **watch-tasks.sh 会自动检测**到 "需要触发: 是"，然后自动调用对应的 Agent
