@@ -283,15 +283,20 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 # 1. 更新任务状态为已完成
 sed -i 's/| developer | 待开始 |/| developer | 已完成 |/g' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
 
-# 2. 设置下一步角色（开发完成后流转到文档_writer，如果没有测试阶段）
-#    如果需要经过测试阶段，改成 qa
-sed -i 's/下一步角色: developer/下一步角色: writer/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
+# 2. 设置下一步角色
+#    先检查是否有测试阶段（qa），如果有则流转到 qa，否则流转到 writer
+if grep -q "qa.*待开始" ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md; then
+    # 有测试阶段，流转到 qa
+    sed -i 's/下一步角色: developer/下一步角色: qa/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
+    sed -i 's/当前阶段: 开发/当前阶段: 测试/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
+else
+    # 没有测试阶段，直接到文档
+    sed -i 's/下一步角色: developer/下一步角色: writer/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
+    sed -i 's/当前阶段: 开发/当前阶段: 文档/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
+fi
 
 # 3. 设置需要触发为"是"（关键！这样调度器才会继续触发下一个 Agent）
 sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
-
-# 4. 更新当前阶段
-sed -i 's/当前阶段: 开发阶段/当前阶段: 文档阶段/' ~/.openclaw/workspaces/lili/projects/xxx/shared/TASKS.md
 ```
 
 ### 项目归属标记
