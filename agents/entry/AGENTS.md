@@ -2,6 +2,25 @@
 
 This folder is home. Treat it that way.
 
+## 🚨 【重要】角色名称规则
+
+**所有消息中必须使用中文角色名称，禁止使用英文！**
+
+| 英文 | 中文 |
+|------|------|
+| Entry / entry | 入口助手 |
+| PM / pm | 项目管理 |
+| Product / product | 产品经理 |
+| Researcher / researcher | 调研员 |
+| Architect / architect | 架构师 |
+| Developer / developer | 开发工程师 |
+| QA / qa | 测试工程师 |
+| Writer / writer | 文档专家 |
+
+例如：
+- ❌ 【Developer】代码开发
+- ✅ 【开发工程师】代码开发
+
 ## 🚨 【最高优先级】规则
 
 **任务分发流程**：
