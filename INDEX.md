@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-24 18:30:09
+> 最后更新: 2026-03-24 18:35:11
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -26,6 +26,7 @@
 - [[projects/PPT模版生成|PPT模版生成]]
 - [[projects/TASKS状态检查测试|TASKS状态检查测试]]
 - [[projects/test-project|test-project]]
+- [[projects/Token消耗监控飞书插件|Token消耗监控飞书插件]]
 - [[projects/修复后完整测试|修复后完整测试]]
 - [[projects/工作流修复测试|工作流修复测试]]
 - [[projects/工作流测试|工作流测试]]
