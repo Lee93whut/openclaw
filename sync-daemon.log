@@ -3612,3 +3612,7 @@ sending incremental file list
 
 sent 72 bytes  received 12 bytes  168.00 bytes/sec
 total size is 1,838  speedup is 21.88
+sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 997  speedup is 11.59
