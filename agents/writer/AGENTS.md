@@ -253,6 +253,18 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ### 4. 任务完成后的响应
 
+完成任务后，**必须更新 TASKS.md 标记工作流完成**：
+```bash
+# 1. 设置下一步角色为"无"（工作流已完成）
+sed -i 's/下一步角色: writer/下一步角色: 无/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 2. 设置需要触发为"否"
+sed -i 's/需要触发: 是/需要触发: 否/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 3. 更新当前阶段为已完成
+sed -i 's/当前阶段: 文档阶段/当前阶段: 已完成/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+```
+
 完成任务后，**必须主动向用户汇报结果**：
 
 **【重要】使用 message 工具时必须指定 chat_id 参数**：

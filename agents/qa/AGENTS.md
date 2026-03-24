@@ -254,6 +254,18 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ### 4. 任务完成后的响应
 
+完成任务后，**必须更新 TASKS.md 以触发下一个 Agent**：
+```bash
+# 1. 设置下一步角色为 writer（测试完成后进入文档）
+sed -i 's/下一步角色: qa/下一步角色: writer/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 2. 设置需要触发为"是"
+sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 3. 更新当前阶段
+sed -i 's/当前阶段: 测试阶段/当前阶段: 文档阶段/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+```
+
 完成任务后，**必须主动向用户汇报结果**：
 ```
 【任务完成】-【项目名称】- 测试工程师

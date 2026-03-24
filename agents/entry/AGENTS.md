@@ -292,13 +292,17 @@ This is a starting point. Add your own conventions, style, and rules as you figu
    mkdir -p ~/.openclaw/workspaces/lili/projects/{项目名}/shared
    ```
 
-   - 然后写入 TASKS.md，**必须包含以下工作流状态部分**：
+   - 然后写入 TASKS.md，**必须包含以下内容**：
    ```markdown
    ## 工作流状态
    - 当前阶段: {调研/开发/文档}
    - 下一步角色: pm
    - 需要触发: 是
    - 任务内容: {用户的需求描述}
+
+   ## 工作流
+   {entry → pm → researcher → developer → qa → writer → 完成}
+   （根据任务类型选择合适的工作流路径）
    ```
 
 2. **关键：工作流状态格式（必须完全匹配）**
@@ -355,6 +359,9 @@ cat > ~/.openclaw/workspaces/lili/projects/A2A协议调研/shared/TASKS.md << 'E
 - 下一步角色: pm
 - 需要触发: 是
 - 任务内容: 调研现在A2A的结构和协议有哪些
+
+## 工作流
+entry → pm → researcher → writer → 完成
 EOF
 ```
 

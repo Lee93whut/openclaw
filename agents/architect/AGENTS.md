@@ -253,6 +253,18 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ### 4. 任务完成后的响应
 
+完成任务后，**必须更新 TASKS.md 以触发下一个 Agent**：
+```bash
+# 1. 设置下一步角色为 developer（架构完成后进入开发）
+sed -i 's/下一步角色: architect/下一步角色: developer/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 2. 设置需要触发为"是"
+sed -i 's/需要触发: 否/需要触发: 是/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+
+# 3. 更新当前阶段
+sed -i 's/当前阶段: 架构设计/当前阶段: 开发阶段/' ~/.openclaw/workspaces/lili/projects/{项目名}/shared/TASKS.md
+```
+
 完成任务后，**必须主动向用户汇报结果**：
 ```
 【任务完成】-【项目名称】- 系统架构师
