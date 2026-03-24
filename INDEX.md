@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-24 16:30:07
+> 最后更新: 2026-03-24 17:00:12
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -23,6 +23,7 @@
 - [[projects/AI了解|AI了解]]
 - [[projects/L4自动驾驶可视化调研|L4自动驾驶可视化调研]]
 - [[projects/L4自动驾驶方案调研|L4自动驾驶方案调研]]
+- [[projects/PPT模版生成|PPT模版生成]]
 - [[projects/TASKS状态检查测试|TASKS状态检查测试]]
 - [[projects/test-project|test-project]]
 - [[projects/修复后完整测试|修复后完整测试]]
