@@ -2988,4 +2988,27 @@ sent 74 bytes  received 12 bytes  172.00 bytes/sec
 total size is 997  speedup is 11.59
 To github.com:Lee93whut/openclaw.git
    08ab2a35..39e4097e  main -> main
-[2026-03-24 19:23:59] ✓ 已同步并推送 2 个文件
+sending incremental file list
+
+sent 130 bytes  received 12 bytes  284.00 bytes/sec
+total size is 2,112  speedup is 14.87
+sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 1,226  speedup is 14.26
+sending incremental file list
+
+sent 176 bytes  received 12 bytes  376.00 bytes/sec
+total size is 53,641  speedup is 285.32
+sending incremental file list
+
+sent 103 bytes  received 12 bytes  230.00 bytes/sec
+total size is 1,863  speedup is 16.20
+sending incremental file list
+
+sent 72 bytes  received 12 bytes  168.00 bytes/sec
+total size is 1,838  speedup is 21.88
+sending incremental file list
+
+sent 74 bytes  received 12 bytes  172.00 bytes/sec
+total size is 997  speedup is 11.59
