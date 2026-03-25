@@ -1,13 +1,24 @@
 # 任务清单 - 工作流跳转测试
 
+## 工作流状态
+
+当前阶段: 文档阶段
+下一步角色: writer
+需要触发: 否
+任务内容: 整理项目文档
+
+## 工作流
+
+PM → 产品经理(product) → 架构师(architect) → 开发(developer) → 测试(qa) → 文档(writer)
+
 ## 任务列表
 
 | 任务 | 负责角色 | 状态 | 需要触发 | 下一步角色 |
 |------|----------|------|:--------:|:----------:|
-| 需求分析 | product | 待开始 | 是 | architect |
-| 架构设计 | architect | 处理中 | 是 | developer |
-| 功能开发 | developer | 待开始 | 是 | qa |
-| 测试执行 | qa | 已完成 | 是 | writer |
+| 需求分析 | product | 已完成 | 是 | architect |
+| 架构设计 | architect | 已完成 | 是 | developer |
+| 功能开发 | developer | 已完成 | 是 | qa |
+| 测试执行 | qa | 待开始 | 是 | writer |
 | 文档整理 | writer | 待开始 | 否 | 无 |
 
 ## 状态说明
