@@ -50,5 +50,5 @@ PM → Product → Architect → Developer → QA → Writer
 ## 工作流状态
 - 当前阶段: 测试验证
 - 下一步角色: qa
-- 需要触发: 否
+- 需要触发: 是
 - 任务内容: 基于架构文档进行功能开发
