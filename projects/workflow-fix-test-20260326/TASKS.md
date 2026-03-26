@@ -52,7 +52,7 @@ PM → Product → Architect → Developer → QA → Writer
 - 当前阶段: 开发实施
 - 当前任务: 开发人员进行功能开发
 - 下一步角色: developer
-- 需要触发: 否
+- 需要触发: 是
 - 任务内容: 基于架构文档进行功能开发
 
 ## 任务追踪
