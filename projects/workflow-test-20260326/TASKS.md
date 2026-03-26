@@ -48,7 +48,7 @@ PM → Product → Architect → Developer → QA → Writer
 ---
 
 ## 工作流状态
-- 当前阶段: 架构设计
-- 下一步角色: architect
+- 当前阶段: 开发实施
+- 下一步角色: developer
 - 需要触发: 是
-- 任务内容: 基于PRD进行技术架构设计
+- 任务内容: 基于架构文档进行功能开发
