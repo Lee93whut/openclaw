@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-26 11:29:27
+> 最后更新: 2026-03-26 11:29:37
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -28,6 +28,7 @@
 - [[projects/e2e-test-20260325-204656|e2e-test-20260325-204656]]
 - [[projects/e2e-test-20260325-204832|e2e-test-20260325-204832]]
 - [[projects/feishu-notify-test|feishu-notify-test]]
+- [[projects/final-test-20260326|final-test-20260326]]
 - [[projects/final-workflow-test|final-workflow-test]]
 - [[projects/fix-test-20260325-202928|fix-test-20260325-202928]]
 - [[projects/full-workflow-test-20260325-183433|full-workflow-test-20260325-183433]]
