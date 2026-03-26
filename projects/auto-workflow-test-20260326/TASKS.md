@@ -50,5 +50,5 @@ PM → Product → Architect → Developer → QA → Writer
 ## 工作流状态
 - 当前阶段: 文档整理
 - 下一步角色: writer
-- 需要触发: 否
+- 需要触发: 是
 - 任务内容: 整理项目文档并发布最终版本
