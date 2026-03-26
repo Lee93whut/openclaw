@@ -16,7 +16,7 @@ product → architect → writer
 | 任务 | 负责角色 | 状态 | 需要触发 | 下一步角色 |
 |------|----------|------|:--------:|:----------:|
 | 需求分析 | product | 已完成 | 是 | architect |
-| 架构设计 | architect | 待开始 | 是 | writer |
+| 架构设计 | architect | 已完成 | 是 | writer |
 | 文档整理 | writer | 待开始 | 否 | 无 |
 
 ## 状态说明
