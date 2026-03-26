@@ -2,10 +2,10 @@
 
 ## 工作流状态
 
-当前阶段: 测试验证
-下一步角色: qa
+当前阶段: 文档整理
+下一步角色: writer
 需要触发: 是
-任务内容: 编写测试用例，执行测试并记录结果
+任务内容: 整理项目文档并发布最终版本
 
 ## 工作流
 
@@ -20,5 +20,5 @@ entry → pm → product → architect → developer → qa → writer
 | 需求分析 | product | 已完成 | 是 | architect |
 | 架构设计 | architect | 已完成 | 是 | developer |
 | 功能开发 | developer | 待开始 | 否 | qa |
-| 测试执行 | qa | 待开始 | 否 | writer |
+| 测试执行 | qa | 已完成 | 否 | writer |
 | 文档整理 | writer | 待开始 | 否 | 无 |
