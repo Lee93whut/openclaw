@@ -48,7 +48,7 @@ PM → Product → Architect → Developer → QA → Writer
 ---
 
 ## 工作流状态
-- 当前阶段: 需求分析
-- 下一步角色: product
+- 当前阶段: 架构设计
+- 下一步角色: architect
 - 需要触发: 是
-- 任务内容: 测试工作流自动化
+- 任务内容: 基于PRD进行技术架构设计
