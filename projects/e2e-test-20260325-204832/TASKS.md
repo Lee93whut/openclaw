@@ -18,7 +18,7 @@ entry → pm → product → architect → developer → qa → writer
 | 入口处理 | entry | 待开始 | 否 | pm |
 | 项目管理 | pm | 待开始 | 否 | product |
 | 需求分析 | product | 已完成 | 是 | architect |
-| 架构设计 | architect | 待开始 | 是 | developer |
+| 架构设计 | architect | 已完成 | 是 | developer |
 | 功能开发 | developer | 待开始 | 否 | qa |
 | 测试执行 | qa | 待开始 | 否 | writer |
 | 文档整理 | writer | 待开始 | 否 | 无 |
