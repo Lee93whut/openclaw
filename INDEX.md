@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-25 13:49:36
+> 最后更新: 2026-03-26 10:18:51
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -21,15 +21,35 @@
 - [[projects/A2A协议调研2026|A2A协议调研2026]]
 - [[projects/A2A协议调研测试|A2A协议调研测试]]
 - [[projects/AI了解|AI了解]]
+- [[projects/auto-test-20260325-211808|auto-test-20260325-211808]]
+- [[projects/auto-workflow-test-20260325|auto-workflow-test-20260325]]
+- [[projects/e2e-full-test-20260325-205023|e2e-full-test-20260325-205023]]
+- [[projects/e2e-test-20260325-204656|e2e-test-20260325-204656]]
+- [[projects/e2e-test-20260325-204832|e2e-test-20260325-204832]]
+- [[projects/feishu-notify-test|feishu-notify-test]]
+- [[projects/final-workflow-test|final-workflow-test]]
+- [[projects/fix-test-20260325-202928|fix-test-20260325-202928]]
+- [[projects/full-workflow-test-20260325-183433|full-workflow-test-20260325-183433]]
 - [[projects/L4自动驾驶可视化调研|L4自动驾驶可视化调研]]
 - [[projects/L4自动驾驶方案调研|L4自动驾驶方案调研]]
+- [[projects/openclaw-workflow-test-2026|openclaw-workflow-test-2026]]
+- [[projects/pm-test-20260325-210119|pm-test-20260325-210119]]
 - [[projects/PPT模版生成|PPT模版生成]]
 - [[projects/real-workflow-test|real-workflow-test]]
 - [[projects/TASKS状态检查测试|TASKS状态检查测试]]
+- [[projects/test-20260325-175155|test-20260325-175155]]
 - [[projects/test-project|test-project]]
 - [[projects/Token消耗监控飞书插件|Token消耗监控飞书插件]]
+- [[projects/verify-fix-20260325-213717|verify-fix-20260325-213717]]
+- [[projects/verify-flow-20260325-220000|verify-flow-20260325-220000]]
+- [[projects/workflow-auto-test-20260325-175030|workflow-auto-test-20260325-175030]]
+- [[projects/workflow-auto-test-20260325-175043|workflow-auto-test-20260325-175043]]
+- [[projects/workflow-auto-test-20260325-175114|workflow-auto-test-20260325-175114]]
+- [[projects/workflow-auto-test-20260325-181944|workflow-auto-test-20260325-181944]]
+- [[projects/workflow-auto-test-20260325-182024|workflow-auto-test-20260325-182024]]
 - [[projects/workflow-full-test|workflow-full-test]]
 - [[projects/workflow-test|workflow-test]]
+- [[projects/workflow-verify-20260325-210857|workflow-verify-20260325-210857]]
 - [[projects/修复后完整测试|修复后完整测试]]
 - [[projects/工作流修复测试|工作流修复测试]]
 - [[projects/工作流测试|工作流测试]]
