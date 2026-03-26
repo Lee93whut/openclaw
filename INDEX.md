@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-26 10:38:20
+> 最后更新: 2026-03-26 10:38:31
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -49,6 +49,7 @@
 - [[projects/workflow-auto-test-20260325-182024|workflow-auto-test-20260325-182024]]
 - [[projects/workflow-full-test|workflow-full-test]]
 - [[projects/workflow-test|workflow-test]]
+- [[projects/workflow-test-20260326|workflow-test-20260326]]
 - [[projects/workflow-verify-20260325-210857|workflow-verify-20260325-210857]]
 - [[projects/修复后完整测试|修复后完整测试]]
 - [[projects/工作流修复测试|工作流修复测试]]
