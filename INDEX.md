@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-27 11:04:20
+> 最后更新: 2026-03-27 11:04:31
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -42,6 +42,7 @@
 - [[projects/pm-test-20260325-210119|pm-test-20260325-210119]]
 - [[projects/PPT模版生成|PPT模版生成]]
 - [[projects/real-workflow-test|real-workflow-test]]
+- [[projects/shared-test-20260327|shared-test-20260327]]
 - [[projects/TASKS状态检查测试|TASKS状态检查测试]]
 - [[projects/test-20260325-175155|test-20260325-175155]]
 - [[projects/test-project|test-project]]
