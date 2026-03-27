@@ -1,6 +1,6 @@
 # OpenClaw 产出物索引
 
-> 最后更新: 2026-03-27 09:59:28
+> 最后更新: 2026-03-27 09:59:37
 
 ## 全局信息
 - [[global/PROJECTS]] - 项目列表
@@ -46,6 +46,7 @@
 - [[projects/test-20260325-175155|test-20260325-175155]]
 - [[projects/test-project|test-project]]
 - [[projects/Token消耗监控飞书插件|Token消耗监控飞书插件]]
+- [[projects/TRASH|TRASH]]
 - [[projects/verify-fix-20260325-213717|verify-fix-20260325-213717]]
 - [[projects/verify-flow-20260325-220000|verify-flow-20260325-220000]]
 - [[projects/workflow-auto-test-20260325-175030|workflow-auto-test-20260325-175030]]
